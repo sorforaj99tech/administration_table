@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adminstation</title>
+</head>
+<body>
+
+    <form method="POST">
+
+        {% csrf_token %}
+
+            <h1>Adminstation Panel</h1>
+
+            <input type="text" placeholder="Enter your user name " name="name">      <br><br>
+            <input type="email" placeholder="Enter your email " name="email">        <br><br>
+            <input type="phone" placeholder="Enter your phone number " name="phone"> <br><br>
+            <input type="text" placeholder="Enter Your tech name " name="tech">      <br><br>
+            <input type="text" placeholder="Enter your dept name " name="dept">      <br><br>
+            <input type="text" placeholder="Enter your shift" name="shift">          <br><br>
+            <input type="password" placeholder="Enter your pass" name="pass">        <br><br>
+            <button type="submit">Sign Up</button>
+
+    </form>
+
+</body>
+</html>
